@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Blog Generator</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f5f7fa;
+            font-family: 'Arial', sans-serif;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 40px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            margin-top: 50px;
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            font-weight: bold;
+        }
+        .btn-generate {
+            width: 100%;
+            background-color: #3498db;
+            color: white;
+            padding: 12px;
+            font-size: 16px;
+            border-radius: 8px;
+            border: none;
+            cursor: pointer;
+        }
+        .btn-generate:hover {
+            background-color: #2980b9;
+        }
+        textarea {
+            width: 100%;
+            height: 300px;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 14px;
+            color: #7f8c8d;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>AI Blog Generator</h1>
+        <p class="text-center text-muted">Generate high-quality blogs instantly using AI</p>
+
+        <form method="POST">
+            <div class="mb-3">
+                <input type="text" class="form-control" name="topic" placeholder="Enter blog topic" required>
+            </div>
+            <button type="submit" class="btn btn-generate">Generate Blog</button>
+        </form>
+
+        {% if blog %}
+        <div class="mt-4">
+            <h2>Generated Blog:</h2>
+            <textarea readonly>{{ blog }}</textarea>
+        </div>
+        {% endif %}
+    </div>
+
+    <footer>
+        <p>Powered by AI | Designed by Priyanka 🚀</p>
+    </footer>
+
+</body>
+</html>
