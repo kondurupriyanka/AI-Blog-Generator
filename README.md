@@ -10,7 +10,7 @@ AI Blog Generator, Gives you an instant research content from all the resources
 ✅ Wikipedia-powered research integration
 ✅ Fast & modern UI (Bootstrap)
 ✅ Flask-based backend
-✅ Deployed on Render
+✅ Deployed on GitHub
 
 🔗 Live Demo: https://kondurupriyanka.github.io/AI-Blog-Generator/
 
